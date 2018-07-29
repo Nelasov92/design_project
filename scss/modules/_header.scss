@@ -1,0 +1,137 @@
+@include font-face(Century Gothic, GOTHIC);
+
+.header {
+	@include size(100%, 100%);
+	position: relative;
+
+
+	&__container {
+		@include size(100%, 900px);
+		background: #fff url(../image/bg_header.jpg) no-repeat center;
+		background-size: cover;
+
+	}
+
+	&__block-text {
+		@include pos(absolute, 280px, 200px, auto, auto);
+		font: 400 30px Century Gothic, sans-serif;
+		display: block;
+		width: 450px;
+	}
+
+	&__button {
+		@include pos(absolute, 400px, 455px, auto, auto);
+		border: 4px solid #000;
+		padding: 30px 30px;
+		text-align-last: center;
+	}
+
+	&__button a {
+		font: 400 20px Century Gothic, sans-serif;
+		text-decoration: none;
+		color: #000;
+	}
+
+	&__colum {
+		@include size(415px, 100%);
+		@include pos(absolute, auto, auto, auto, 185px);
+		background: #00aeef;
+		opacity: 0.72;
+		position: relative;
+	}
+
+	&__colum::after {
+		@include pos(absolute, 75px, 80px, auto, 80px);
+		background: #b7b7b7 url(../image/foto_header.jpg) no-repeat center;
+		background-size: 280px;
+		background-position: top -50px left 0;
+		content: "";
+		border-radius: 50%;
+		width: 270px;
+		height: 270px;
+	}
+
+	&__colum-ul {
+		margin: 0;
+		padding-top: 70px;
+		text-align: center;
+	}
+
+	&__colum-li {
+		display: inline;
+		margin-right: 30px;
+	}
+
+	&__colum-icon {
+		width: 45px;
+	}
+
+	&__name {
+		font: 400 24px Century Gothic, sans-serif;
+		color: #FFF;
+		text-align: center;
+		padding-top: 415px;
+	}
+
+	&__name-phone {
+		font: 400 18px Century Gothic, sans-serif;
+		color: #FFF;
+		text-align: center;
+		padding-top: 50px;
+		position: relative;
+	}
+
+	&__name-icon{
+		width: 25px;
+		position: absolute;
+		margin-right: 20px;
+		left: 75px;
+	}
+
+	&__name-mail {
+		font: 400 18px Century Gothic, sans-serif;
+		color: #FFF;
+		text-align: center;
+		padding-top: 50px;
+	}
+
+	&__menu {
+		@include size(100%, 85px);
+		background: #01cfff;
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	&__menu-title {
+		font: 400 20px Century Gothic, sans-serif;
+		color: #000;
+		padding: 33px 115px;
+		text-align: left;
+	}
+
+	&__menu-li {
+		padding: 30px;
+		background: #01cfff;
+		list-style-type: none;
+
+	}
+
+
+	&__menu-li:hover {
+		background: #000;
+		color: #FFF;
+		cursor: pointer;
+	}
+
+	&__menu-li a {
+		font: 400 18px Century Gothic, sans-serif;
+		color: #FFF;
+		text-decoration: none;
+	}
+
+
+
+
+}
+
+
