@@ -3,157 +3,6 @@
 .main {
 	@include size(100%, 100%);
 
-	&__container {
-
-	}
-
-	&__about {
-		@include size(100%, 500px);
-		position: relative;
-		display: flex;
-		margin-bottom: 100px;
-	}
-
-	&__about::after {
-		@include pos(absolute, 100px, 80px, auto, 145px);
-		background: #b7b7b7 url(../image/foto_block.jpg) no-repeat center;
-		background-size: 500px;
-		background-position: top -80px left -45px;
-		content: "";
-		border-radius: 50%;
-		width: 270px;
-		height: 270px;
-	}
-
-	&__about-block {
-		@include size(100px, 500px);
-		background: #000;
-	}
-
-	&__about-text {
-		font: 400 40px Century Gothic, sans-serif;
-		color: #FFF;
-		text-align: center;
-		padding: 80px 33px;
-		word-wrap: break-word;
-	}
-
-	&__text {
-		@include size(520px, 300px);
-		@include pos(absolute, 150px, auto, auto, 580px);
-		font: 400 18px Century Gothic, sans-serif;
-	}
-
-	&__text-ul {
-		display: flex;
-		margin-top: 45px;
-	}
-
-	&__text-li {
-		font: 400 16px Century Gothic, sans-serif;
-		display: inline-block;
-		margin-right: 90px;
-		white-space: nowrap;
-		text-align: center;
-	}
-
-	&__text-icon {
-		width: 50px;
-	}
-
-
-	&__skills {
-		@include size(100%, 500px);
-		position: relative;
-		margin-bottom: 100px;
-		display: flex;
-	}
-
-
-	&__skills-block {
-		@include size(100px, 500px);
-		background: #000;
-	}
-
-	&__skills-text {
-		font: 400 40px Century Gothic, sans-serif;
-		color: #FFF;
-		text-align: center;
-		padding: 100px 45px;
-		word-wrap: break-word;
-	}
-
-	&__skills-container {
-		@include size(100%, 100%);
-	}
-
-
-	&__skills-ul {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
-		align-items: center;
-		margin-top: 90px;
-	}
-
-	&__skills-li {
-		font: 400 18px Century Gothic, sans-serif;
-		text-align: center;
-		position: relative;
-	}
-
-	&__skills-img {
-		width: 130px;
-		margin-top: 25px;
-	}
-
-
-	&__skills-ulicon {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
-		align-items: center;
-		margin-top: 60px;
-	}
-
-	&__skills-licon {
-		font: 400 18px Century Gothic, sans-serif;
-		display: inline-block;
-		text-align: center;
-	}
-
-	&__skills-icon {
-		width: 50px;
-		flex-direction: row;
-		justify-content: space-around;
-		align-items: center;
-	}
-
-
-	&__works {
-		@include size(100%, 950px);
-		position: relative;
-		margin-bottom: 100px;
-	}
-
-	&__works-block {
-		@include size(100px, 950px);
-		background: #000;
-	}
-
-	&__works-text {
-		font: 400 40px Century Gothic, sans-serif;
-		color: #FFF;
-		text-align: center;
-		padding: 350px 45px;
-		word-wrap: break-word;
-	}
-
-
-
-
-
-
 
 	&__contacs {
 		@include size(100%, 500px);
@@ -240,3 +89,19 @@
 
 
 }
+
+.fixed {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 999;
+}
+
+main {
+	transition: none;
+}
+
+.fixed + main {
+	padding-top: 85px;
+}
+

@@ -1,0 +1,81 @@
+.contacs {
+	@include size(100%, 500px);
+	position: relative;
+	display: flex;
+}
+
+&__contacs-block {
+	@include size(100px, 500px);
+	background: #000;
+}
+
+&__contacs-text {
+	font: 400 40px Century Gothic, sans-serif;
+	color: #FFF;
+	text-align: center;
+	padding: 100px 45px;
+	word-wrap: break-word;
+}
+
+
+&__form {
+	@include size(550px, 300px);
+}
+
+&__form-name {
+	@include size(100%, 70px);
+	border: 3px solid #00aeef;
+	padding: 25px;
+	margin: 50px;
+}
+
+&__name {
+	font: 400 18px Century Gothic, sans-serif;
+}
+
+
+
+&__form-email {
+	@include size(100%, 70px);
+	border: 3px solid #00aeef;
+	padding: 25px;
+	margin: 50px;
+}
+
+&__email {
+	font: 400 18px Century Gothic, sans-serif;
+}
+
+&__form-button {
+	@include size(200px, 70px);
+	padding: 25px 50px;
+	background: #00aeef;
+	float: right;
+	cursor: pointer;
+}
+
+&__button {
+	font: 400 18px Century Gothic, sans-serif;
+	color: #FFF;
+	background: #00aeef;
+	cursor: pointer;
+}
+
+&__contacs-contact {
+	margin: 100px 150px;
+}
+
+&__contacs-ul {
+	font: 400 18px Century Gothic, sans-serif;
+	display: flex;
+	flex-direction: column;
+}
+
+&__contacs-info {
+	margin: 0 60px;
+}
+
+
+&__contacs-icon {
+	width: 40px;
+}

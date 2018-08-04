@@ -29,3 +29,97 @@ body, html {
 .clear::after {
 	clear: both;
 }
+
+
+.side-menu {
+	@include pos(absolute, 0, auto, auto, 0);
+	@include size(100px, 100%);
+	background: #000;
+
+	&__text {
+		font: 400 40px Century Gothic, sans-serif;
+		color: #FFF;
+		text-align: center;
+		transform: translateY(-50%);
+		position: absolute;
+		width: 40px;
+		top: 50%;
+		letter-spacing: 4px;
+		right: 30px;
+		word-wrap: break-word;
+	}
+}
+
+.container {
+	padding-left: 120px;
+}
+
+
+.card {
+	@include size(150px, 150px);
+	position: relative;
+	border-radius: 50%;
+	perspective: 150px;
+	padding-top: 25px;
+
+
+	&:hover .front {
+		transform: rotateY(180deg);
+	}
+
+	&:hover .back {
+		transform: rotateY(360deg);
+	}
+
+
+
+	.front {
+		@include size(100%);
+		position: absolute;
+		background-size: 100%;
+		border-radius: 50%;
+		transition: 1s;
+		backface-visibility: hidden;
+
+	}
+
+
+	.back {
+		@include size(100%);
+		position: absolute;
+		background-size: 100%;
+		border-radius: 50%;
+		transform: rotateY(180deg);
+		transition: 1s;
+		backface-visibility: hidden;
+	}
+
+
+	.figma {
+		background: url(../icons/if_Figma_2745006.svg) no-repeat center;
+		background-size: 100%;
+	}
+
+	.photoshop {
+		background: url(../icons/if_Adobe_Photoshop_2745034.svg) no-repeat center;
+		background-size: 100%;
+	}
+
+	.illustrator{
+		background: url(../icons/if_Adobe_Illustrator_2745035.svg) no-repeat center;
+		background-size: 100%;
+	}
+
+
+
+}
+
+
+figcaption:hover {
+	transition: 1s;
+	background: #ffffff;
+	background: -moz-linear-gradient(left, #ffffff 0%, #00aeef 50%, #ffffff 100%);
+	background: -webkit-linear-gradient(left, #ffffff 0%,#00aeef 50%,#ffffff 100%);
+	background: linear-gradient(to right, #ffffff 0%,#00aeef 50%,#ffffff 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 );
+}

@@ -1,0 +1,67 @@
+.about {
+	@include size(100%, 100%);
+	position: relative;
+
+
+	&__block {
+		@include pos(absolute, 0, auto, auto, 0);
+		width: 100px;
+		background: #000;
+	}
+
+	&__img {
+		width: 100%;
+		border-radius: 50%;
+		display: block;
+		margin: 0 auto;
+		margin-top: 100px;
+		margin-left: 45px;
+	}
+
+	&__text-block {
+		font: 400 40px Century Gothic, sans-serif;
+		color: #FFF;
+		text-align: center;
+		padding: 80px 33px;
+		word-wrap: break-word;
+	}
+
+	&__text {
+		font: 400 18px Century Gothic, sans-serif;
+		margin: 160px 20px;
+	}
+
+	&__text-ul {
+		display: flex;
+		margin-top: 45px;
+	}
+
+	&__text-li {
+		font: 400 16px Century Gothic, sans-serif;
+		display: inline-block;
+		margin-right: 90px;
+		white-space: nowrap;
+		text-align: center;
+	}
+
+	&__text-icon {
+		width: 50px;
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

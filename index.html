@@ -4,9 +4,10 @@
 	<meta charset="UTF-8">
 	<meta name="description" content="Start Template">
 	<meta name="author" content="Admin">
-	<title>Start</title>
+	<title>Anastasiia Lieta</title>
 
 	<link rel="icon" href="images/favicon.png">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
 	<link rel="stylesheet" href="css/styles.min.css">
 
 	<!--[if lt IE 9]>
@@ -15,165 +16,280 @@
 </head>
 <body>
 	<header>
-		<div class="header">
+		<div class="header" id="header">
 			<div class="header__container">
-				<div class="header__block">
-					<p class="header__block-text">Hello, I’m Anastasiia Lieta A UX Designer & Dreamer UA</p>
-					<button type="" class="header__button"><a href="#">LEARN MORE</a></button>
+				<div class="row">
+					<div class="header__colum col-4 offset-1">
+						<div>
+							<img src="image/foto_header.jpg" class="header__imges">
+						</div>
+						<h1 class="header__name">Anastasiia Lieta</h1>
+						<div>
+							<a href="#" class="header__name-phone col-2 offset-2">
+								<img src="icons/smartphone.svg" class="header__name-icon">+38066 484 7834
+							</a>
+						</div>
+						<div>
+							<a href="#" class="header__name-mail col-3 offset-2">
+								<img src="icons/email.svg" class="header__name-icon">letaa1687@gmail.com
+							</a>
+						</div>
+						<ul class="header__colum-ul">
+							<li class="header__colum-li">
+								<img src="icons/linkedin-logo-button.svg" class="header__colum-icon">
+							</li>
+							<li class="header__colum-li">
+								<img src="icons/facebook-logo-button.svg" class="header__colum-icon">
+							</li>
+							<li class="header__colum-li">
+								<img src="icons/skype-logo.svg" class="header__colum-icon">
+							</li>
+							<li class="header__colum-li">
+								<img src="icons/behance-logo-button.svg" class="header__colum-icon">
+							</li>
+						</ul>
+					</div>
+					<div class="header__block col-4 offset-2">
+						<p class="header__block-text">Hello, I’m Anastasiia Lieta A UX Designer & Dreamer UA</p>
+						<a href="#" class="header__button">LEARN MORE</a>
+					</div>
 				</div>
-				<div class="header__colum">
-					<h1 class="header__name">Anastasiia Lieta</h1>
-					<p class="header__name-phone"><img src="icons/smartphone.svg" class="header__name-icon">+38066 484 7834</p>
-					<p class="header__name-mail"><img src="icons/email.svg" class="header__name-icon">letaa1687@gmail.com</p>
-					<ul class="header__colum-ul">
-						<li class="header__colum-li">
-							<img src="icons/linkedin-logo-button.svg" class="header__colum-icon">
-						</li>
-						<li class="header__colum-li">
-							<img src="icons/facebook-logo-button.svg" class="header__colum-icon">
-						</li>
-						<li class="header__colum-li">
-							<img src="icons/skype-logo.svg" class="header__colum-icon">
-						</li>
-						<li class="header__colum-li">
-							<img src="icons/behance-logo-button.svg" class="header__colum-icon">
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div>
-				<menu class="header__menu">
-					<h1 class="header__menu-title">MYBOOK</h1>
-					<li class="header__menu-li">
-						<a href="#">Home</a>
-					</li>
-					<li class="header__menu-li">
-						<a href="#">About me</a>
-					</li>
-					<li class="header__menu-li">
-						<a href="#">Skills</a>
-					</li>
-					<li class="header__menu-li">
-						<a href="#">Works</a>
-					</li>
-					<li class="header__menu-li">
-						<a href="#">Contacts</a>
-					</li>
-				</menu>
 			</div>
 		</div>
 	</header>
-	<main>
-		<div class="main">
-			<div class="main__container">
-				<div class="main__about">
-					<div class="main__about-block">
-						<p class="main__about-text">About me</p>
+	<div id="menu-wrapper">
+		<menu class="header__menu">
+			<h1 class="header__menu-title">MYBOOK</h1>
+			<ul>
+				<li class="header__menu-li">
+					<a href="#">Home</a>
+				</li>
+				<li class="header__menu-li">
+					<a href="#about">About me</a>
+				</li>
+				<li class="header__menu-li">
+					<a href="#skills">Skills</a>
+				</li>
+				<li class="header__menu-li">
+					<a href="#works">Works</a>
+				</li>
+				<li class="header__menu-li">
+					<a href="#contacs">Contacts</a>
+				</li>
+			</ul>
+		</menu>
+	</div>
+	<main class="main">
+		<div class="main__container">
+			<section class="about" id="about">
+				<div class="row">
+					<div class="about__block">
+						<p class="about__text-block">About me</p>
 					</div>
-					<div class="main__text">
+					<div class="col-3 offset-1">
+						<img src="image/foto_foto.jpg" class="about__img">
+					</div>
+					<div class="about__text col-5 offset-5">
 						<p>My name is Anastasiia Lieta. I’m a Web designer & SMM developer. I can make a great project becouse I have skills not only in Web design and also in anouther industries. For example: translation, trade, SMM, SEO.</p><br><br>
 						<p>If you want to have a qualitative project I would help you!</p>
-						<ul class="main__text-ul">
-							<li class="main__text-li">
-								<img src="icons/speech-bubbles.svg" class="main__text-icon">
-								<figcaption>Communication</figcaption>
+						<ul class="about__text-ul">
+							<li class="about__text-li">
+								<img src="icons/speech-bubbles.svg" class="about__text-icon">
+								<figure>
+									<figcaption>Communication</figcaption>
+								</figure>
 							</li>
-							<li class="main__text-li">
-								<img src="icons/award.svg" class="main__text-icon">
-								<figcaption>Quality</figcaption>
+							<li class="about__text-li">
+								<img src="icons/award.svg" class="about__text-icon">
+								<figure>
+									<figcaption>Quality</figcaption>
+								</figure>
 							</li>
-							<li class="main__text-li">
-								<img src="icons/calendar.svg" class="main__text-icon">
-								<figcaption>In time</figcaption>
+							<li class="about__text-li">
+								<img src="icons/calendar.svg" class="about__text-icon">
+								<figure>
+									<figcaption>In time</figcaption>
+								</figure>
 							</li>
-							<li class="main__text-li">
-								<img src="icons/profits.svg" class="main__text-icon">
-								<figcaption>Normal price</figcaption>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="main__skills">
-					<div class="main__skills-block">
-						<p class="main__skills-text">Skills</p>
-					</div>
-					<div class="main__skills-container">
-						<ul class="main__skills-ul">
-							<li class="main__skills-li">
-								<figcaption>Figma</figcaption>
-								<img src="icons/if_Figma_2745006.svg" class="main__skills-img">
-							</li>
-							<li class="main__skills-li">
-								<figcaption>Illustrator</figcaption>
-								<img src="icons/if_Adobe_Photoshop_2745034.svg" class="main__skills-img">
-							</li>
-							<li class="main__skills-li">
-								<figcaption>Photoshop</figcaption>
-								<img src="icons/if_Adobe_Illustrator_2745035.svg" class="main__skills-img">
-							</li>
-						</ul>
-						<ul class="main__skills-ulicon">
-							<li class="main__skills-licon">
-								<img src="icons/landing-page-interface-symbol.svg" class="main__skills-icon">
-								<figcaption>Landing page</figcaption>
-							</li>
-							<li class="main__skills-licon">
-								<img src="icons/analytics-graphic-on-screen.svg" class="main__skills-icon">
-								<figcaption>Corporate website</figcaption>
-							</li>
-							<li class="main__skills-licon">
-								<img src="icons/website-design-symbol.svg" class="main__skills-icon">
-								<figcaption>Visitcard website</figcaption>
-							</li>
-							<li class="main__skills-licon">
-								<img src="icons/shopping-bag.svg" class="main__skills-icon">
-								<figcaption>Store website</figcaption>
+							<li class="about__text-li">
+								<img src="icons/profits.svg" class="about__text-icon">
+								<figure>
+									<figcaption>Normal price</figcaption>
+								</figure>
 							</li>
 						</ul>
 					</div>
 				</div>
-				<div class="main__works">
-					<div class="main__works-block">
-						<p class="main__works-text">Works</p>
-					</div>
-					<div>
-
-					</div>
+			</section>
+			<section class="skills" id="skills">
+				<div class="side-menu">
+					<p class="side-menu__text">Skills</p>
 				</div>
-				<div class="main__contacs">
-					<div class="main__contacs-block">
-						<p class="main__contacs-text">Contacs</p>
-					</div>
-					<form class="main__form">
-						<div class="main__form-name">
-							<input type="text" name="Name" class="main__name" id="mainname" placeholder="Name">
+				<div class="container">
+					<div class="skills__image">
+						<div class="row">
+							<div class="col-2 offset-2">
+								<figure>
+									<figcaption>Figma</figcaption>
+								</figure>
+								<div class="card">
+									<div class="front figma"></div>
+									<div class="back figma"></div>
+								</div>
+							</div>
+							<div class="col-2 offset-2">
+								<figure>
+									<figcaption>Photoshop</figcaption>
+								</figure>
+								<div class="card">
+									<div class="front photoshop"></div>
+									<div class="back photoshop"></div>
+								</div>
+							</div>
+							<div class="col-2 offset-2">
+								<figure>
+									<figcaption>Illustrator</figcaption>
+								</figure>
+								<div class="card">
+									<div class="front illustrator"></div>
+									<div class="back illustrator"></div>
+								</div>
+							</div>
 						</div>
-						<div class="main__form-email">
-							<input type="email" name="Email" class="main__email" id="mainemail" placeholder="Email">
+					</div>
+					<div class="skills__icondiv">
+						<div class="row">
+							<div class="col-1 offset-3">
+								<img src="icons/landing-page-interface-symbol.svg" class="skills__icon">
+								<figure>
+									<figcaption>Landing page</figcaption>
+								</figure>
+							</div>
+							<div class="col-1 offset-1">
+								<img src="icons/analytics-graphic-on-screen.svg" class="skills__icon">
+								<figure>
+									<figcaption>Corporate website</figcaption>
+								</figure>
+							</div>
+							<div class="col-1 offset-1">
+								<img src="icons/website-design-symbol.svg" class="skills__icon">
+								<figure>
+									<figcaption>Visitcard website</figcaption>
+								</figure>
+							</div>
+							<div class="col-1 offset-1">
+								<img src="icons/shopping-bag.svg" class="skills__icon">
+								<figure>
+									<figcaption>Store website</figcaption>
+								</figure>
+							</div>
+							<!-- <ul class="skills__ulicon">
+								<li class="skills__licon">
+									<img src="icons/landing-page-interface-symbol.svg" class="skills__icon">
+									<figure>
+										<figcaption>Landing page</figcaption>
+									</figure>
+								</li>
+								<li class="skills__licon">
+									<img src="icons/analytics-graphic-on-screen.svg" class="skills__icon">
+									<figure>
+										<figcaption>Corporate website</figcaption>
+									</figure>
+								</li>
+								<li class="skills__licon">
+									<img src="icons/website-design-symbol.svg" class="skills__icon">
+									<figure>
+										<figcaption>Visitcard website</figcaption>
+									</figure>
+								</li>
+								<li class="skills__licon">
+									<img src="icons/shopping-bag.svg" class="skills__icon">
+									<figure>
+										<figcaption>Store website</figcaption>
+									</figure>
+								</li>
+							</ul> -->
 						</div>
-						<div class="main__form-button">
-							<button type="submit" class="main__button">SEND NOW</button>
-						</div>
-					</form>
-					<div class="main__contacs-contact">
-						<ul class="main__contacs-ul">
-							<li class="main__contacs-phone">
-								<img src="icons/smartphone.svg" alt="phone" class="main__contacs-icon">
-								<p class="main__contacs-info">+38066 484 7834</p>
-							</li>
-							<li class="main__contacs-email">
-								<img src="icons/email.svg" alt="email" class="main__contacs-icon">
-								<p class="main__contacs-info">letaa1687@gmail.com</p>
-							</li>
-						</ul>
 					</div>
 				</div>
-			</div>
+			</section>
+			<section class="works" id="works">
+				<div class="side-menu">
+					<p class="side-menu__text ">Works</p>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-6">
+							<img src="image/foto_works1.jpg">
+						</div>
+						<div class="col-6">
+							<img src="image/foto-works2.jpg">
+						</div>
+						<div class="col-4">
+							<img src="image/foto_works3.png">
+						</div>
+						<div class="col-7">
+							<img src="image/foto_works4.jpg">
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="main__contacs" id="contacs">
+				<div class="main__contacs-block">
+					<p class="main__contacs-text">Contacs</p>
+				</div>
+				<form class="main__form">
+					<div class="main__form-name">
+						<input type="text" name="Name" class="main__name" id="mainname" placeholder="Name">
+					</div>
+					<div class="main__form-email">
+						<input type="email" name="Email" class="main__email" id="mainemail" placeholder="Email">
+					</div>
+					<div class="main__form-button">
+						<button type="submit" class="main__button">SEND NOW</button>
+					</div>
+				</form>
+				<div class="main__contacs-contact">
+					<ul class="main__contacs-ul">
+						<li class="main__contacs-phone">
+							<img src="icons/smartphone.svg" alt="phone" class="main__contacs-icon">
+							<p class="main__contacs-info">+38066 484 7834</p>
+						</li>
+						<li class="main__contacs-email">
+							<img src="icons/email.svg" alt="email" class="main__contacs-icon">
+							<p class="main__contacs-info">letaa1687@gmail.com</p>
+						</li>
+					</ul>
+				</div>
+			</section>
 		</div>
 	</main>
 
 
+
 <!-- LiveReload Script -->
+
+<script>
+	// When the user scrolls the page, execute myFunction
+	window.onscroll = function() {myFunction()};
+
+	// Get the header
+	var header = document.getElementById("menu-wrapper");
+
+	// Get the offset position of the navbar
+	var sticky = header.offsetTop;
+
+	// Add the fixed class to the header when you reach its scroll position. Remove "fixed" when you leave the scroll position
+	function myFunction() {
+	  if (window.pageYOffset > sticky) {
+	    header.classList.add("fixed");
+	  } else {
+	    header.classList.remove("fixed");
+	  }
+	}
+</script>
+
+
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>
