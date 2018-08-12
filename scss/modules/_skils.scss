@@ -3,19 +3,6 @@
 	position: relative;
 	margin-bottom: 150px;
 
-	&__block {
-		@include pos(absolute, 0, auto, auto, 0);
-		width: 100px;
-		background: #000;
-	}
-
-	&__text {
-		font: 400 40px Century Gothic, sans-serif;
-		color: #FFF;
-		text-align: center;
-		padding: 100px 45px;
-		word-wrap: break-word;
-	}
 
 
 	&__image {
@@ -31,16 +18,17 @@
 		padding-top: 60px;
 	}
 
-	&__img {
-		width: 130px;
-		margin-top: 25px;
-	}
+
 
 	&__icon {
 		width: 50px;
 		flex-direction: row;
 		justify-content: space-around;
 		align-items: center;
+		&:hover {
+			width: 60px;
+		}
+
 	}
 
 

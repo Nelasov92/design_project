@@ -1004,10 +1004,6 @@ body, html {
   word-wrap: break-word;
 }
 
-.container {
-  padding-left: 120px;
-}
-
 .card {
   width: 150px;
   height: 150px;
@@ -1055,12 +1051,11 @@ body, html {
 }
 
 figcaption:hover {
-  transition: 1s;
-  background: #ffffff;
-  background: -moz-linear-gradient(left, #ffffff 0%, #00aeef 50%, #ffffff 100%);
-  background: -webkit-linear-gradient(left, #ffffff 0%, #00aeef 50%, #ffffff 100%);
-  background: linear-gradient(to right, #ffffff 0%, #00aeef 50%, #ffffff 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ffffff", endColorstr="#ffffff",GradientType=1 );
+  background: #a3d9ed;
+  background: -moz-radial-gradient(center, ellipse cover, #a3d9ed 0%, #ffffff 100%);
+  background: -webkit-radial-gradient(center, ellipse cover, #a3d9ed 0%, #ffffff 100%);
+  background: radial-gradient(ellipse at center, #a3d9ed 0%, #ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#a3d9ed", endColorstr="#ffffff",GradientType=1 );
 }
 
 @font-face {
@@ -1072,12 +1067,8 @@ figcaption:hover {
 }
 .header {
   width: 100%;
-  height: 100%;
-  position: relative;
-}
-.header__container {
-  width: 100%;
   height: 900px;
+  position: relative;
   background: #fff url(../image/bg_header.jpg) no-repeat center;
   background-size: cover;
 }
@@ -1129,6 +1120,10 @@ figcaption:hover {
 .header__colum-icon {
   width: 45px;
   margin-right: 10px;
+  transition: 2s;
+}
+.header__colum-icon:hover {
+  transform: rotate(360deg);
 }
 .header__name {
   font: 400 24px Century Gothic, sans-serif;
@@ -1139,17 +1134,30 @@ figcaption:hover {
 .header__name-phone {
   font: 400 18px Century Gothic, sans-serif;
   color: #FFF;
+  display: block;
   text-decoration: none;
+  margin-bottom: 30px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
 }
 .header__name-icon {
   width: 25px;
+  margin-right: 15px;
+  transition: 1s;
+}
+.header__name-icon:hover {
+  transform: rotate(360deg);
 }
 .header__name-mail {
   font: 400 18px Century Gothic, sans-serif;
   color: #FFF;
   text-align: center;
   text-decoration: none;
-  padding-top: 50px;
+  padding-top: 25px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
 }
 .header__menu {
   width: 100%;
@@ -1181,12 +1189,6 @@ figcaption:hover {
   font: 400 18px Century Gothic, sans-serif;
   color: #FFF;
   text-decoration: none;
-}
-
-.manu__fixed {
-  position: fixed;
-  top: 0;
-  width: 100%;
 }
 
 @font-face {
@@ -1222,13 +1224,6 @@ figcaption:hover {
   width: 550px;
   height: 300px;
 }
-.main__form-name {
-  width: 100%;
-  height: 70px;
-  border: 3px solid #00aeef;
-  padding: 25px;
-  margin: 50px;
-}
 .main__name {
   font: 400 18px Century Gothic, sans-serif;
 }
@@ -1256,20 +1251,6 @@ figcaption:hover {
   background: #00aeef;
   cursor: pointer;
 }
-.main__contacs-contact {
-  margin: 100px 150px;
-}
-.main__contacs-ul {
-  font: 400 18px Century Gothic, sans-serif;
-  display: flex;
-  flex-direction: column;
-}
-.main__contacs-info {
-  margin: 0 60px;
-}
-.main__contacs-icon {
-  width: 40px;
-}
 
 .fixed {
   position: fixed;
@@ -1289,24 +1270,20 @@ main {
 .about {
   width: 100%;
   height: 100%;
+  margin-bottom: 150px;
   position: relative;
 }
-.about__block {
-  position: absolute;
-  top: 0;
-  right: auto;
-  bottom: auto;
-  left: 0;
-  width: 100px;
-  background: #000;
-}
 .about__img {
-  width: 100%;
+  max-height: 300px;
+  max-width: 300px;
   border-radius: 50%;
   display: block;
   margin: 0 auto;
   margin-top: 100px;
-  margin-left: 45px;
+}
+.about__img:hover {
+  max-height: 330px;
+  max-width: 330px;
 }
 .about__text-block {
   font: 400 40px Century Gothic, sans-serif;
@@ -1317,7 +1294,7 @@ main {
 }
 .about__text {
   font: 400 18px Century Gothic, sans-serif;
-  margin: 160px 20px;
+  margin: 200px;
 }
 .about__text-ul {
   display: flex;
@@ -1333,28 +1310,15 @@ main {
 .about__text-icon {
   width: 50px;
 }
+.about__text-icon:hover {
+  width: 60px;
+}
 
 .skills {
   width: 100%;
   height: 100%;
   position: relative;
   margin-bottom: 150px;
-}
-.skills__block {
-  position: absolute;
-  top: 0;
-  right: auto;
-  bottom: auto;
-  left: 0;
-  width: 100px;
-  background: #000;
-}
-.skills__text {
-  font: 400 40px Century Gothic, sans-serif;
-  color: #FFF;
-  text-align: center;
-  padding: 100px 45px;
-  word-wrap: break-word;
 }
 .skills__image {
   font: 400 18px Century Gothic, sans-serif;
@@ -1366,15 +1330,14 @@ main {
   text-align: center;
   padding-top: 60px;
 }
-.skills__img {
-  width: 130px;
-  margin-top: 25px;
-}
 .skills__icon {
   width: 50px;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+}
+.skills__icon:hover {
+  width: 60px;
 }
 
 .works {
@@ -1383,9 +1346,78 @@ main {
   margin-bottom: 100px;
   position: relative;
 }
+.works__img {
+  border: 3px solid #fff;
+}
+.works__img:hover {
+  border: 3px solid #01cfff;
+}
 
 .side-menu__text {
   letter-spacing: 13px;
+}
+
+.contacs {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin-bottom: 100px;
+}
+.contacs__info {
+  font: 400 18px Century Gothic, sans-serif;
+  margin: 0 40px;
+  display: flex;
+  line-height: 40px;
+  align-items: center;
+}
+.contacs__icon {
+  width: 40px;
+  transition: 1s;
+}
+.contacs__icon:hover {
+  width: 45px;
+  transform: rotate(360deg);
+}
+
+.form {
+  width: 100%;
+  height: 100%;
+  margin: 50px auto 50px 180px;
+}
+.form__name {
+  width: 100%;
+  height: 70px;
+  border: 3px solid #00aeef;
+  padding: 25px;
+  margin: 50px;
+}
+.form__name-name {
+  font: 400 18px Century Gothic, sans-serif;
+}
+.form__email {
+  width: 100%;
+  height: 70px;
+  border: 3px solid #00aeef;
+  padding: 25px;
+  margin: 50px;
+}
+.form__email-email {
+  font: 400 18px Century Gothic, sans-serif;
+}
+.form__button {
+  font: 400 18px Century Gothic, sans-serif;
+  color: #FFF;
+  height: 70px;
+  padding: 25px 50px;
+  background: #00aeef;
+  float: right;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.form__button:hover {
+  color: #00aeef;
+  background: #fff;
+  border: 1px solid #00aeef;
 }
 
 /*# sourceMappingURL=styles.min.css.map */

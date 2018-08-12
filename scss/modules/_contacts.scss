@@ -1,81 +1,80 @@
 .contacs {
-	@include size(100%, 500px);
+	@include size(100%,);
 	position: relative;
-	display: flex;
+	margin-bottom: 100px;
+
+
+	&__info {
+		font: 400 18px Century Gothic, sans-serif;
+		margin: 0 40px;
+		display: flex;
+		line-height: 40px;
+		align-items: center;
+	}
+
+
+	&__icon {
+		width: 40px;
+		transition: 1s;
+		&:hover {
+			width: 45px;
+			transform: rotate(360deg);
+		}
+	}
 }
 
-&__contacs-block {
-	@include size(100px, 500px);
-	background: #000;
-}
+.form {
+	@include size(100%);
+	margin: 50px auto 50px 180px;
 
-&__contacs-text {
-	font: 400 40px Century Gothic, sans-serif;
-	color: #FFF;
-	text-align: center;
-	padding: 100px 45px;
-	word-wrap: break-word;
-}
+	&__name {
+		@include size(100%, 70px);
+		border: 3px solid #00aeef;
+		padding: 25px;
+		margin: 50px;
 
+		&-name {
+			font: 400 18px Century Gothic, sans-serif;
+		}
+	}
 
-&__form {
-	@include size(550px, 300px);
-}
+	&__email {
+		@include size(100%, 70px);
+		border: 3px solid #00aeef;
+		padding: 25px;
+		margin: 50px;
 
-&__form-name {
-	@include size(100%, 70px);
-	border: 3px solid #00aeef;
-	padding: 25px;
-	margin: 50px;
-}
+		&-email {
+			font: 400 18px Century Gothic, sans-serif;
+		}
 
-&__name {
-	font: 400 18px Century Gothic, sans-serif;
-}
+	}
 
+	&__button {
+		font: 400 18px Century Gothic, sans-serif;
+		color: #FFF;
+		height: 70px;
+		padding: 25px 50px;
+		background: #00aeef;
+		float: right;
+		cursor: pointer;
+		transition: .3s;
+		&:hover {
+			color: #00aeef;
+			background: #fff;
+			border: 1px solid #00aeef;
+		}
+	}
 
-
-&__form-email {
-	@include size(100%, 70px);
-	border: 3px solid #00aeef;
-	padding: 25px;
-	margin: 50px;
-}
-
-&__email {
-	font: 400 18px Century Gothic, sans-serif;
-}
-
-&__form-button {
-	@include size(200px, 70px);
-	padding: 25px 50px;
-	background: #00aeef;
-	float: right;
-	cursor: pointer;
-}
-
-&__button {
-	font: 400 18px Century Gothic, sans-serif;
-	color: #FFF;
-	background: #00aeef;
-	cursor: pointer;
-}
-
-&__contacs-contact {
-	margin: 100px 150px;
-}
-
-&__contacs-ul {
-	font: 400 18px Century Gothic, sans-serif;
-	display: flex;
-	flex-direction: column;
-}
-
-&__contacs-info {
-	margin: 0 60px;
 }
 
 
-&__contacs-icon {
-	width: 40px;
-}
+
+
+
+
+
+
+
+
+

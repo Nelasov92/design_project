@@ -50,9 +50,6 @@ body, html {
 	}
 }
 
-.container {
-	padding-left: 120px;
-}
 
 
 .card {
@@ -116,10 +113,9 @@ body, html {
 
 
 figcaption:hover {
-	transition: 1s;
-	background: #ffffff;
-	background: -moz-linear-gradient(left, #ffffff 0%, #00aeef 50%, #ffffff 100%);
-	background: -webkit-linear-gradient(left, #ffffff 0%,#00aeef 50%,#ffffff 100%);
-	background: linear-gradient(to right, #ffffff 0%,#00aeef 50%,#ffffff 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 );
+	background: #a3d9ed;
+	background: -moz-radial-gradient(center, ellipse cover, #a3d9ed 0%, #ffffff 100%);
+	background: -webkit-radial-gradient(center, ellipse cover, #a3d9ed 0%,#ffffff 100%);
+	background: radial-gradient(ellipse at center, #a3d9ed 0%,#ffffff 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a3d9ed', endColorstr='#ffffff',GradientType=1 );
 }
