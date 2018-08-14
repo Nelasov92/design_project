@@ -1311,7 +1311,7 @@ main {
   width: 50px;
 }
 .about__text-icon:hover {
-  width: 60px;
+  width: 40px;
 }
 
 .skills {
@@ -1337,7 +1337,7 @@ main {
   align-items: center;
 }
 .skills__icon:hover {
-  width: 60px;
+  width: 40px;
 }
 
 .works {
@@ -1375,7 +1375,7 @@ main {
   transition: 1s;
 }
 .contacs__icon:hover {
-  width: 45px;
+  width: 35px;
   transform: rotate(360deg);
 }
 
@@ -1417,7 +1417,7 @@ main {
 .form__button:hover {
   color: #00aeef;
   background: #fff;
-  border: 1px solid #00aeef;
+  border: 3px solid #00aeef;
 }
 
 /*# sourceMappingURL=styles.min.css.map */
